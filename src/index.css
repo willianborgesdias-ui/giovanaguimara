@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-script: "Alex Brush", cursive;
+  --font-brand: "Montserrat", sans-serif;
+  
+  /* Brand colors matching the mint/teal logo of Giovana Guimara */
+  --color-brand-50: #f2faf8;
+  --color-brand-100: #dff2ee;
+  --color-brand-200: #8ecdc5; /* Light accent mint */
+  --color-brand-300: #7bc5bd; /* Base mint green from logo */
+  --color-brand-400: #5cb3aa; /* Solid mint green */
+  --color-brand-500: #429f95; /* Deep rich mint */
+  --color-brand-600: #337e75; /* Slate mint */
+  --color-brand-700: #2c6961; /* Dark pine green */
+  --color-brand-800: #1b4742; /* Deep forest slate */
+  --color-brand-900: #12332f; /* Deepest shade */
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-50);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-200);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-300);
+}
+
+html {
+  scroll-behavior: smooth;
+}
